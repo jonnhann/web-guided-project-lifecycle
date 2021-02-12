@@ -9,7 +9,14 @@ class Search extends React.Component {
   }
 
   render() {
-
+    return (
+      <div>
+        <form>
+          <input onChange={ } value={this.state.dogBreed} type="text" />
+          <button>Fetch dogs!</button>
+        </form>
+      </div>
+    )
   }
 
 }
