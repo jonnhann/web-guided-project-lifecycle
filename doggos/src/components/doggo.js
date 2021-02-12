@@ -8,7 +8,7 @@ class Doggo extends React.Component {
     // ^ equivalent to const imageUrl = this.props.imageUrl
     return (
       <>
-        <img className="dog-image" alt={`dog image ${index}`} width="200" key={doggo} src={doggo} />
+        <img className="dog-image" alt={imageUrl} width="200" key={imageUrl} src={imageUrl} />
       </>
     )
   }
