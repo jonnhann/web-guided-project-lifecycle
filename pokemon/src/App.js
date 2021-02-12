@@ -10,11 +10,13 @@ class App extends React.Component {
     super();
     console.log("App constructor");
     this.state = {
-      pokemon: data
+      pokemon: []
     };
   }
 
   componentDidMount() {
+    // hit the API
+    this.setState({ pokemon: data });
     console.log("App componentDidMount");
   }
 
