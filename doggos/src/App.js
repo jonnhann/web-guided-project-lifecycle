@@ -25,6 +25,14 @@ class App extends React.Component {
 
   searchDoggos = dogBreed => {
     console.log("searching:", dogBreed);
+    axios.get(`https://dog.ceo/api/breed/${dogBreed}/images`)
+      .then(res => {
+        this.setState({
+          ...this.state,
+          doggos: res.data.message
+        })
+      })
+      .catch(err => console.log(err))
   }
 
   render() {
