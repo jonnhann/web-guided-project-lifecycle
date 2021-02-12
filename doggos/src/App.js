@@ -11,8 +11,8 @@ class App extends React.Component {
 
   componentDidMount() {
     axios.get("https://dog.ceo/api/breed/hound/images")
-      .then(res => console.log(res))
-    .catch(err => console.log(err))
+      .then(res => console.log(res.data.message))
+      .catch(err => console.log(err))
   }
 
   render() {
