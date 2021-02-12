@@ -31,6 +31,7 @@ class App extends React.Component {
       .then(res => {
         this.setState({
           ...this.state,
+          currentBreed: dogBreed,
           doggos: res.data.message
         })
       })
