@@ -5,7 +5,7 @@ class Pokemon extends React.Component {
   render() {
     return (
       <>
-        {props.pokemon.map(pokemon => (
+        {this.props.pokemon.map(pokemon => (
           <div key={pokemon.id} className="pokemon">
             <img src={pokemon.img} alt={pokemon.name} />
             <div>
@@ -17,7 +17,7 @@ class Pokemon extends React.Component {
         ))}
       </>
     );
-  }
+  };
 
 }
 
