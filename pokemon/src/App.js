@@ -21,7 +21,7 @@ class App extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log("App CDU");
+    console.log("App CDU, state changed?", prevState !== this.state);
   }
 
   render() {

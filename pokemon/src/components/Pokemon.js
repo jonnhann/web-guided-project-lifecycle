@@ -7,7 +7,8 @@ class Pokemon extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log("Pokemon CDU");
+    console.log("Pokemon CDU, state changed?", prevState !== this.state);
+
   }
   render() {
     console.log("Pokemon render");
