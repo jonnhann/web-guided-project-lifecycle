@@ -41,7 +41,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Hi WEBPT24 doggos family</h1>
+        <h1>{`Hi WEBPT24 ${this.state.currentBreed} family`}</h1>
         <Search handleSearch={this.searchDoggos} />
         {this.state.doggos && this.state.doggos.map((imageUrl, index) => {
           return <Doggo key={`Dog image ${index}`} imageUrl={imageUrl} />
