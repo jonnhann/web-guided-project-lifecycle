@@ -19,8 +19,8 @@ class Search extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={}>
-          <input onChange={ } value={this.state.dogBreed} type="text" />
+        <form onSubmit={this.handleSubmit}>
+          <input onChange={this.handleChange} value={this.state.dogBreed} type="text" />
           <button>Fetch dogs!</button>
         </form>
       </div>
