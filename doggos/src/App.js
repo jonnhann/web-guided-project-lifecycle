@@ -8,20 +8,13 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      currentBreed: "hound"
+      currentBreed: "hound",
       doggos: []
     }
   }
 
   componentDidMount() {
-    axios.get("https://dog.ceo/api/breed/hound/images")
-      .then(res => { 
-        this.setState({
-          ...this.state,
-          doggos: res.data.message
-        })
-      })
-      .catch(err => console.log(err))
+    this.searchDoggos(this.state.currentBreed);
   }
 
   componentDidUpdate(prevProps, prevState) {
