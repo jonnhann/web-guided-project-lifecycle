@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class Pokemon extends React.Component {
+  componentDidMount() {
+    console.log("Pokemon componentDidMount");
+  }
   render() {
     return (
       <>
