@@ -17,7 +17,11 @@ class Search extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log("submitting form");
+    console.log("submitting form", this.state.dogBreed);
+    this.setState({
+      ...this.state,
+      dogBreed: ""
+    })
   }
 
   render() {
