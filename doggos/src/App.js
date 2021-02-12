@@ -23,6 +23,11 @@ class App extends React.Component {
       .catch(err => console.log(err))
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    console.log("App CDU running");
+
+  }
+
   searchDoggos = dogBreed => {
     console.log("searching:", dogBreed);
     axios.get(`https://dog.ceo/api/breed/${dogBreed}/images`)
