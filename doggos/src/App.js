@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import "./styles.css";
-import Doggo from './components/doggo';
+import Doggo from './components/Doggo';
 
 class App extends React.Component {
   constructor() {
