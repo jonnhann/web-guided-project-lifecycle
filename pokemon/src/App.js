@@ -20,6 +20,10 @@ class App extends React.Component {
     console.log("App componentDidMount");
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    console.log("App CDU");
+  }
+
   render() {
     console.log("App render method");
     return (
