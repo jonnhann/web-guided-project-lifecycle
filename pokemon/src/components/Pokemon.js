@@ -7,6 +7,7 @@ class Pokemon extends React.Component {
   }
   render() {
     console.log("Pokemon render");
+    console.log("what is this.props.pokemon?", this.props.pokemon);
     return (
       <>
         {this.props.pokemon.map(pokemon => (
