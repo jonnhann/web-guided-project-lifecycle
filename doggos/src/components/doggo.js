@@ -7,7 +7,7 @@ class Doggo extends React.Component {
     // ^ equivalent to const imageUrl = this.props.imageUrl
     return (
       <>
-        <img alt={imageUrl} width="200" src={imageUrl} />
+        <img className="dog-image" alt={imageUrl} width="200" src={imageUrl} />
       </>
     )
   }
