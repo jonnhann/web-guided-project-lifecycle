@@ -23,7 +23,12 @@ class App extends React.Component {
   render() {
     return (
       <h1>Hi WEBPT24 doggos family</h1>
-      <img width="200" key={doggo} src={doggo} />
+      {this.state.doggos && this.state.doggos.map(doggo => {
+        return <img width="200" key={doggo} src={doggo} />
+      }
+        
+      )}
+
     )
   }
 }
