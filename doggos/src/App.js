@@ -8,6 +8,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      currentBreed: "hound"
       doggos: []
     }
   }
@@ -27,6 +28,7 @@ class App extends React.Component {
     console.log("App CDU running");
     if (prevState.doggos !== this.state.doggos) {
       console.log("doggos have changed!");
+
     }
   }
 
