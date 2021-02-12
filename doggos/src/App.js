@@ -25,7 +25,9 @@ class App extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     console.log("App CDU running");
-
+    if (prevState.doggos !== this.state.doggos) {
+      console.log("doggos have changed!");
+    }
   }
 
   searchDoggos = dogBreed => {
