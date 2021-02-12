@@ -8,6 +8,7 @@ import Pokemon from './components/Pokemon';
 class App extends React.Component {
   constructor() {
     super();
+    console.log("App constructor");
     this.state = {
       pokemon: data
     };
