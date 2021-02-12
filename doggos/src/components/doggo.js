@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import "../styles.css";
 
 class Doggo extends React.Component {
   render() {
@@ -8,7 +7,7 @@ class Doggo extends React.Component {
     // ^ equivalent to const imageUrl = this.props.imageUrl
     return (
       <>
-        <img className="dog-image" alt={imageUrl} width="200" src={imageUrl} />
+        <img alt={imageUrl} width="200" src={imageUrl} />
       </>
     )
   }
