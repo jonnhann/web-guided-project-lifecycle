@@ -25,8 +25,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Hi WEBPT24 doggos family</h1>
-        {this.state.doggos && this.state.doggos.map(doggo => {
-          return <img className="dog-image" width="200" key={doggo} src={doggo} />
+        {this.state.doggos && this.state.doggos.map((doggo, index) => {
+          return <img className="dog-image" alt={`dog image ${index}`} width="200" key={doggo} src={doggo} />
         })}
       </div>
     )
