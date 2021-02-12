@@ -14,7 +14,12 @@ class App extends React.Component {
     };
   }
 
+  componentDidMount() {
+    // console.log("componentDidMount");
+  }
+
   render() {
+    console.log("App render method");
     return (
       <div className="App">
         <Pokemon pokemon={this.state.pokemon} />
