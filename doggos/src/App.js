@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import "./styles.css";
 
 class App extends React.Component {
   constructor() {
@@ -25,7 +26,7 @@ class App extends React.Component {
       <div>
         <h1>Hi WEBPT24 doggos family</h1>
         {this.state.doggos && this.state.doggos.map(doggo => {
-          return <img width="200" key={doggo} src={doggo} />
+          return <img className="dog-image" width="200" key={doggo} src={doggo} />
         })}
       </div>
     )
