@@ -11,3 +11,5 @@ class Doggo extends React.Component {
     )
   }
 }
+
+export default Doggo;
