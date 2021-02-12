@@ -9,6 +9,12 @@ class App extends React.Component {
     }
   }
 
+  componentDidMount() {
+    axios.get("https://dog.ceo/api/breed/hound/images")
+      .then(res => console.log(res))
+    .catch(err => console.log(err))
+  }
+
   render() {
     return (
         <h1>Hi WEBPT24 doggos family</h1>
