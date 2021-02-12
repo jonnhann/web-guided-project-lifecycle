@@ -23,6 +23,10 @@ class App extends React.Component {
       .catch(err => console.log(err))
   }
 
+  searchDoggos = dogBreed => {
+    console.log("searching:", dogBreed);
+  }
+
   render() {
     return (
       <div className="App">
