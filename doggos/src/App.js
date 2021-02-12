@@ -22,10 +22,9 @@ class App extends React.Component {
     if (prevState.doggos !== this.state.doggos) {
       console.log("doggos have changed!");
       if (this.state.currentBreed === "chihuahua") {
-        console.log("no chihuahuas allowed!");
+        console.log("no chihuahuas allowed! ;)");
         this.searchDoggos("husky");
       }
-
     }
   }
 
