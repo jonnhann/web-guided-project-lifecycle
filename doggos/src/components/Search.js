@@ -8,10 +8,18 @@ class Search extends React.Component {
     }
   }
 
+  handleChange = (e) => {
+
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+  }
+
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={}>
           <input onChange={ } value={this.state.dogBreed} type="text" />
           <button>Fetch dogs!</button>
         </form>
