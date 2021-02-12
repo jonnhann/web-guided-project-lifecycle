@@ -9,7 +9,10 @@ class Search extends React.Component {
   }
 
   handleChange = (e) => {
-
+    this.setState({
+      ...this.state,
+      dogBreed: e.target.value
+    })
   }
 
   handleSubmit = (e) => {
@@ -26,5 +29,6 @@ class Search extends React.Component {
       </div>
     )
   }
-
 }
+
+export default Search;

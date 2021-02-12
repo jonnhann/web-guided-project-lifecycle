@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import "./styles.css";
 import Doggo from './components/Doggo';
+import Search from './components/Search';
 
 class App extends React.Component {
   constructor() {
@@ -26,6 +27,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Hi WEBPT24 doggos family</h1>
+        <Search />
         {this.state.doggos && this.state.doggos.map((imageUrl, index) => {
           return <Doggo key={`Dog image ${index}`} imageUrl={imageUrl} />
         })}
