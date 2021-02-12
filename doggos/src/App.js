@@ -7,6 +7,11 @@ class App extends React.Component {
     }
 
     render() {
-        
+        return (
+            <h1>Hi WEBPT24 doggos family</h1>
+        )
+
     }
 }
+
+export default App;
